@@ -32,7 +32,7 @@ class LocalAuthSingleton {
 
   Future<void> isDeviceSupportedFunction() async {
     isDeviceSupported = await auth.isDeviceSupported();
-    log("isDeviceSupported: $canCheckBiometrics");
+    log("isDeviceSupported: $isDeviceSupported");
     return Future<void>.value();
   }
 
